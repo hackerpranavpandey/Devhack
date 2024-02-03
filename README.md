@@ -1,9 +1,9 @@
 
-# Campus Bazar - IIT Dharwad
+# Campus Bazaar - IIT Dharwad
 
 ## Introduction
 
-Welcome to Campus Bazar – a cutting-edge online marketplace tailored exclusively for the vibrant community of IIT Dharwad students and faculty. With a design reminiscent of popular platforms like OLX, Campus Bazar provides a seamless experience for buying and selling college merchandise and used products.
+Welcome to Campus Bazaar – a cutting-edge online marketplace tailored exclusively for the vibrant community of IIT Dharwad students and faculty. With a design reminiscent of popular platforms like OLX, Campus Bazar provides a seamless experience for buying and selling college merchandise and used products.
 
 ## Key Features
 
