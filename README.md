@@ -17,7 +17,7 @@ Welcome to Campus Bazaar – a cutting-edge online marketplace tailored exclusiv
 - Sellers can effortlessly add items for sale, complete with vivid photos, detailed descriptions, and the convenience of attaching QR codes for swift payment processing.
 
 ### **Email Notifications**
-- Stay informed! Authorized users receive prompt email notifications for every new item added by sellers.
+- Stay informed! Authorized users receive prompt email notifications for every new item added by sellers,
 
 ### **Efficient 'Add to Cart' Functionality**
 - Experience dynamic cart updates that automatically reflect the number of products and total price. Seamlessly scan QR codes and make payments with our auto-scan feature.
