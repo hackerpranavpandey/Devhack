@@ -25,11 +25,11 @@ Welcome to Campus Bazar – a cutting-edge online marketplace tailored exclusive
 ### **Robust User Profile**
 - Dive into comprehensive user profiles, showcasing personal information and transaction history.
 
-### **Feedback System**
-- Contribute to the continuous improvement of our web app by providing valuable feedback.
-
 ### **Automatic Item Management**
 - Sold items vanish automatically from the cart or buy page, ensuring a clean and efficient marketplace.
+
+- ### **Feedback System**
+- Contribute to the continuous improvement of our web app by providing valuable feedback in fidback form available in profile page.
 
 ## Technologies Utilized
 
@@ -50,8 +50,8 @@ Welcome to Campus Bazar – a cutting-edge online marketplace tailored exclusive
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/campus-bazar.git
-2. Install dependencies:
+   git clone https://github.com/hackerpranavpandey/campus-bazar.git
+2. Install dependencies give included in .json file
 
 ## How to Use
 1. Navigate to the login/signup page and create your account using your IIT Dharwad email ID.
