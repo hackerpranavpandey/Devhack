@@ -1,0 +1,94 @@
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color for the page */
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header section */
+.about-section {
+  background-color: lightblue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: larger;
+}
+
+/* Center the "Our Team" heading */
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Style the team members section */
+.row {
+  display: flex;
+  justify-content: space-between; /* Adjusted to give equal space between columns */
+}
+
+.column {
+  flex: 0 0 calc(20% - 20px); /* Adjust the width of each column as needed */
+  margin: 10px;
+  box-sizing: border-box; /* Include padding and border in the box model */
+  padding: 15px; /* Add padding to the right and left corners */
+}
+
+/* Style the cards for each team member */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  border-radius: 5px;
+  height: 100%; /* Ensure all cards have the same height */
+  margin: 0 10px; /* Add margin to the right and left corners */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the images within the cards */
+.card img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Style the container within each card */
+.container {
+  padding: 16px;
+}
+
+/* Style the heading and details within the container */
+.container h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.container p {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+/* Optionally, you can style the contact button */
+.button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #555;
+}

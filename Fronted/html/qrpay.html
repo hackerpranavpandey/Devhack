@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Payment System</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #payment-container {
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: #1c1c1c;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        #qrcode {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="payment-container">
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" class="form-control" placeholder="Enter amount" oninput="handleAmountChange()">
+        <button onclick="generateQRCode()" class="btn btn-primary">Generate QR Code</button>
+        <div id="qrcode"></div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- QRCode.js -->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+    <script>
+        function generateQRCode() {
+            var amount = document.getElementById('amount').value.trim();
+            
+            if (amount !== "") {
+                // Replace 'your_payment_endpoint' with your actual server-side payment processing endpoint
+                var paymentEndpoint = 'your_payment_endpoint';
+                
+                // Construct the payment URL with the amount
+                var paymentURL = paymentEndpoint + '?amount=' + encodeURIComponent(amount);
+                
+                // Generate QR Code using qrcode.js
+                var qrcode = new QRCode(document.getElementById("qrcode"), {
+                    text: paymentURL,
+                    width: 200,
+                    height: 200
+                });
+            } else {
+                // Clear the existing QR code if amount is empty
+                document.getElementById("qrcode").innerHTML = "";
+            }
+        }
+
+        function handleAmountChange() {
+            // Clear the existing QR code when the amount is being changed
+            document.getElementById("qrcode").innerHTML = "";
+        }
+    </script>
+</body>
+</html>
